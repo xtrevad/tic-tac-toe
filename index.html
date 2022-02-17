@@ -11,20 +11,36 @@
 <body>
     <div class="container">
         <div class="title-container">Tic Tac Toe</div>
+        <div id="turn-counter"></div>
         <div class="game-container">
             <div class="tile-container">
-                <div class="tile" id="tile-1"></div>
-                <div class="tile" id="tile-2"></div>
-                <div class="tile" id="tile-3"></div>
-                <div class="tile" id="tile-4"></div>
-                <div class="tile" id="tile-5"></div>
-                <div class="tile" id="tile-6"></div>
-                <div class="tile" id="tile-7"></div>
-                <div class="tile" id="tile-8"></div>
-                <div class="tile" id="tile-9"></div>
+                <div class="tile tile-hover" id="tile-1"></div>
+                <div class="tile tile-hover" id="tile-2"></div>
+                <div class="tile tile-hover" id="tile-3"></div>
+                <div class="tile tile-hover" id="tile-4"></div>
+                <div class="tile tile-hover" id="tile-5"></div>
+                <div class="tile tile-hover" id="tile-6"></div>
+                <div class="tile tile-hover" id="tile-7"></div>
+                <div class="tile tile-hover" id="tile-8"></div>
+                <div class="tile tile-hover" id="tile-9"></div>
             </div>
-            <div class="player" id="player-1">Player 1</div>
-            <div class="'player" id="player-2">Player 2</div>
+            <!-- <div class="player" id="player-1">Player 1</div> -->
+            
+            <!-- <div class="'player" id="player-2">Player 2</div> -->
+        </div>
+        <div class="input-container">
+            <p>Player names:</p>
+            <div class="input-wrapper">
+                <input type="text" placeholder="Player 1" id="p1-input">
+                <input type="text" placeholder="Player 2" id="p2-input">
+            </div>
+            <br>
+            <button id="submit" type="button">Submit</button>
+        </div>
+        <!-- <button id="reset" type="button">Reset players</div> -->
+        <div id="overlay">
+            <div></div>
+            <p>Click anywhere to play again</p>
         </div>
     </div>
     
